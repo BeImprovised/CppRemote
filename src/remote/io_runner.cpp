@@ -87,6 +87,8 @@ void io_runner::run_idle()
 	{
 		while (!!m_work)
 		{
+            if(!m_io_service.run_one())break;
+
 			m_io_service.poll();
 			m_idle_io_service.poll_one();
 		}
