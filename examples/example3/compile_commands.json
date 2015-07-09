@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/client.dir/src/remote_player.cpp.o -c src/remote_player.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/client.dir/src/remote_ac.cpp.o -c src/remote_ac.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/client.dir/src/info_service.cpp.o -c src/info_service.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/info_service.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/client.dir/src/client.cpp.o -c src/client.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/client.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/server.dir/src/remote_player.cpp.o -c src/remote_player.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/server.dir/src/remote_ac.cpp.o -c src/remote_ac.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/server.dir/src/info_service.cpp.o -c src/info_service.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/info_service.cpp"
+},
+{
+  "directory": "/_home/beunprepared/working/CppRemote/examples/example3",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG -pthread -I../../include -Isrc    -o CMakeFiles/server.dir/src/server.cpp.o -c src/server.cpp",
+  "file": "/_home/beunprepared/working/CppRemote/examples/example3/src/server.cpp"
+}
+]
