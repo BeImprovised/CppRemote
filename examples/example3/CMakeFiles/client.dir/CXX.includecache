@@ -910,15 +910,15 @@ boost/serialization/string.hpp
 stdexcept
 -
 
-/_home/beunprepared/working/CppRemote/examples/example3/src/client.cpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/client.cpp
 session_info.hpp
-/_home/beunprepared/working/CppRemote/examples/example3/src/session_info.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/session_info.hpp
 info_service.hpp
-/_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
 remote_player.hpp
-/_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
 remote_ac.hpp
-/_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
 remote/session.hpp
 -
 remote/attribute.hpp
@@ -936,13 +936,13 @@ remote/bindings/ipc_transport.hpp
 remote/register_archive.ipp
 -
 
-/_home/beunprepared/working/CppRemote/examples/example3/src/info_service.cpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.cpp
 remote/bindings/binary_serializer.hpp
 -
 info_service.hpp
-/_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
 
-/_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
 remote/idl.hpp
 -
 remote/idl/class.hpp
@@ -950,7 +950,13 @@ remote/idl/class.hpp
 remote/idl/register_class.hpp
 -
 
-/_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.cpp
+remote/bindings/binary_serializer.hpp
+-
+remote_ac.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
+
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
 remote/idl.hpp
 -
 remote/idl/class.hpp
@@ -958,7 +964,13 @@ remote/idl/class.hpp
 remote/idl/register_class.hpp
 -
 
-/_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.cpp
+remote/bindings/binary_serializer.hpp
+-
+remote_player.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
+
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
 remote/idl.hpp
 -
 remote/idl/class.hpp
@@ -966,7 +978,7 @@ remote/idl/class.hpp
 remote/idl/register_class.hpp
 -
 
-/_home/beunprepared/working/CppRemote/examples/example3/src/session_info.hpp
+/_home/beunprepared/working/RPC/CppRemote/examples/example3/src/session_info.hpp
 string
 -
 

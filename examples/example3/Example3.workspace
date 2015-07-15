@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CodeLite_Workspace Name="Example3" SWTLW="No">
+<CodeLite_Workspace Name="Example3" >
   <Project Name="Example3" Path="Example3.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">

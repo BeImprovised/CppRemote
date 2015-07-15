@@ -54,8 +54,8 @@ CMakeFiles/server.dir/src/info_service.cpp.o
  ../../include/remote/remote_error.hpp
  ../../include/remote/shared_future.hpp
  ../../include/remote/shared_future.ipp
- /_home/beunprepared/working/CppRemote/examples/example3/src/info_service.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
 CMakeFiles/server.dir/src/remote_ac.cpp.o
  ../../include/remote/archive/binary_iarchive.hpp
  ../../include/remote/archive/binary_oarchive.hpp
@@ -109,8 +109,8 @@ CMakeFiles/server.dir/src/remote_ac.cpp.o
  ../../include/remote/remote_error.hpp
  ../../include/remote/shared_future.hpp
  ../../include/remote/shared_future.ipp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
 CMakeFiles/server.dir/src/remote_player.cpp.o
  ../../include/remote/archive/binary_iarchive.hpp
  ../../include/remote/archive/binary_oarchive.hpp
@@ -164,8 +164,8 @@ CMakeFiles/server.dir/src/remote_player.cpp.o
  ../../include/remote/remote_error.hpp
  ../../include/remote/shared_future.hpp
  ../../include/remote/shared_future.ipp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
 CMakeFiles/server.dir/src/server.cpp.o
  ../../include/remote/archive/binary_iarchive.hpp
  ../../include/remote/archive/binary_oarchive.hpp
@@ -252,8 +252,8 @@ CMakeFiles/server.dir/src/server.cpp.o
  ../../include/remote/shared_future.ipp
  ../../include/remote/system_error.hpp
  ../../include/remote/target_error.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/model.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/server.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/model.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/server.cpp

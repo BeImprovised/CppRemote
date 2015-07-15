@@ -12,9 +12,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -38,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /_home/beunprepared/working/CppRemote/examples/example3
+CMAKE_SOURCE_DIR = /_home/beunprepared/working/RPC/CppRemote/examples/example3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /_home/beunprepared/working/CppRemote/examples/example3
+CMAKE_BINARY_DIR = /_home/beunprepared/working/RPC/CppRemote/examples/example3
 
 # Include any dependencies generated for this target.
 include CMakeFiles/client.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/client.dir/flags.make
 
 CMakeFiles/client.dir/src/remote_player.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/src/remote_player.cpp.o: src/remote_player.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/RPC/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/src/remote_player.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/remote_player.cpp.o -c src/remote_player.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/remote_player.cpp.o -c /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.cpp
 
 CMakeFiles/client.dir/src/remote_player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/remote_player.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E src/remote_player.cpp > CMakeFiles/client.dir/src/remote_player.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.cpp > CMakeFiles/client.dir/src/remote_player.cpp.i
 
 CMakeFiles/client.dir/src/remote_player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/remote_player.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S src/remote_player.cpp -o CMakeFiles/client.dir/src/remote_player.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.cpp -o CMakeFiles/client.dir/src/remote_player.cpp.s
 
 CMakeFiles/client.dir/src/remote_player.cpp.o.requires:
 .PHONY : CMakeFiles/client.dir/src/remote_player.cpp.o.requires
@@ -77,17 +74,17 @@ CMakeFiles/client.dir/src/remote_player.cpp.o.provides.build: CMakeFiles/client.
 
 CMakeFiles/client.dir/src/remote_ac.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/src/remote_ac.cpp.o: src/remote_ac.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/RPC/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/src/remote_ac.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/remote_ac.cpp.o -c src/remote_ac.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/remote_ac.cpp.o -c /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.cpp
 
 CMakeFiles/client.dir/src/remote_ac.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/remote_ac.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E src/remote_ac.cpp > CMakeFiles/client.dir/src/remote_ac.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.cpp > CMakeFiles/client.dir/src/remote_ac.cpp.i
 
 CMakeFiles/client.dir/src/remote_ac.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/remote_ac.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S src/remote_ac.cpp -o CMakeFiles/client.dir/src/remote_ac.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.cpp -o CMakeFiles/client.dir/src/remote_ac.cpp.s
 
 CMakeFiles/client.dir/src/remote_ac.cpp.o.requires:
 .PHONY : CMakeFiles/client.dir/src/remote_ac.cpp.o.requires
@@ -100,17 +97,17 @@ CMakeFiles/client.dir/src/remote_ac.cpp.o.provides.build: CMakeFiles/client.dir/
 
 CMakeFiles/client.dir/src/info_service.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/src/info_service.cpp.o: src/info_service.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/RPC/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/src/info_service.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/info_service.cpp.o -c src/info_service.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/info_service.cpp.o -c /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.cpp
 
 CMakeFiles/client.dir/src/info_service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/info_service.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E src/info_service.cpp > CMakeFiles/client.dir/src/info_service.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.cpp > CMakeFiles/client.dir/src/info_service.cpp.i
 
 CMakeFiles/client.dir/src/info_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/info_service.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S src/info_service.cpp -o CMakeFiles/client.dir/src/info_service.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.cpp -o CMakeFiles/client.dir/src/info_service.cpp.s
 
 CMakeFiles/client.dir/src/info_service.cpp.o.requires:
 .PHONY : CMakeFiles/client.dir/src/info_service.cpp.o.requires
@@ -123,17 +120,17 @@ CMakeFiles/client.dir/src/info_service.cpp.o.provides.build: CMakeFiles/client.d
 
 CMakeFiles/client.dir/src/client.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/src/client.cpp.o: src/client.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /_home/beunprepared/working/RPC/CppRemote/examples/example3/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/client.dir/src/client.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/client.cpp.o -c src/client.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/client.dir/src/client.cpp.o -c /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/client.cpp
 
 CMakeFiles/client.dir/src/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/src/client.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E src/client.cpp > CMakeFiles/client.dir/src/client.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/client.cpp > CMakeFiles/client.dir/src/client.cpp.i
 
 CMakeFiles/client.dir/src/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/src/client.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S src/client.cpp -o CMakeFiles/client.dir/src/client.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/client.cpp -o CMakeFiles/client.dir/src/client.cpp.s
 
 CMakeFiles/client.dir/src/client.cpp.o.requires:
 .PHONY : CMakeFiles/client.dir/src/client.cpp.o.requires
@@ -159,7 +156,7 @@ bin/client: CMakeFiles/client.dir/src/remote_ac.cpp.o
 bin/client: CMakeFiles/client.dir/src/info_service.cpp.o
 bin/client: CMakeFiles/client.dir/src/client.cpp.o
 bin/client: CMakeFiles/client.dir/build.make
-bin/client: /_home/beunprepared/working/CppRemote/lib/libremote.a
+bin/client: /_home/beunprepared/working/RPC/CppRemote/lib/libremote.a
 bin/client: /usr/lib64/libboost_serialization.a
 bin/client: /usr/lib64/libboost_thread.a
 bin/client: /usr/lib64/libboost_system.a
@@ -183,6 +180,6 @@ CMakeFiles/client.dir/clean:
 .PHONY : CMakeFiles/client.dir/clean
 
 CMakeFiles/client.dir/depend:
-	cd /_home/beunprepared/working/CppRemote/examples/example3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /_home/beunprepared/working/CppRemote/examples/example3 /_home/beunprepared/working/CppRemote/examples/example3 /_home/beunprepared/working/CppRemote/examples/example3 /_home/beunprepared/working/CppRemote/examples/example3 /_home/beunprepared/working/CppRemote/examples/example3/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /_home/beunprepared/working/RPC/CppRemote/examples/example3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /_home/beunprepared/working/RPC/CppRemote/examples/example3 /_home/beunprepared/working/RPC/CppRemote/examples/example3 /_home/beunprepared/working/RPC/CppRemote/examples/example3 /_home/beunprepared/working/RPC/CppRemote/examples/example3 /_home/beunprepared/working/RPC/CppRemote/examples/example3/CMakeFiles/client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/client.dir/depend
 

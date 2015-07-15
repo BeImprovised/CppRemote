@@ -87,11 +87,11 @@ CMakeFiles/client.dir/src/client.cpp.o
  ../../include/remote/shared_future.ipp
  ../../include/remote/system_error.hpp
  ../../include/remote/target_error.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/client.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.hpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/session_info.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/client.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/session_info.hpp
 CMakeFiles/client.dir/src/info_service.cpp.o
  ../../include/remote/archive/binary_iarchive.hpp
  ../../include/remote/archive/binary_oarchive.hpp
@@ -145,8 +145,8 @@ CMakeFiles/client.dir/src/info_service.cpp.o
  ../../include/remote/remote_error.hpp
  ../../include/remote/shared_future.hpp
  ../../include/remote/shared_future.ipp
- /_home/beunprepared/working/CppRemote/examples/example3/src/info_service.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/info_service.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/info_service.hpp
 CMakeFiles/client.dir/src/remote_ac.cpp.o
  ../../include/remote/archive/binary_iarchive.hpp
  ../../include/remote/archive/binary_oarchive.hpp
@@ -200,8 +200,8 @@ CMakeFiles/client.dir/src/remote_ac.cpp.o
  ../../include/remote/remote_error.hpp
  ../../include/remote/shared_future.hpp
  ../../include/remote/shared_future.ipp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_ac.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_ac.hpp
 CMakeFiles/client.dir/src/remote_player.cpp.o
  ../../include/remote/archive/binary_iarchive.hpp
  ../../include/remote/archive/binary_oarchive.hpp
@@ -255,5 +255,5 @@ CMakeFiles/client.dir/src/remote_player.cpp.o
  ../../include/remote/remote_error.hpp
  ../../include/remote/shared_future.hpp
  ../../include/remote/shared_future.ipp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.cpp
- /_home/beunprepared/working/CppRemote/examples/example3/src/remote_player.hpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.cpp
+ /_home/beunprepared/working/RPC/CppRemote/examples/example3/src/remote_player.hpp
