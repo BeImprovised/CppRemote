@@ -1,0 +1,1 @@
+/usr/bin/c++    -pthread -O3 -DNDEBUG    -pthread  -s CMakeFiles/server.dir/src/remote_reader.cpp.o CMakeFiles/server.dir/src/remote_topic.cpp.o CMakeFiles/server.dir/src/server.cpp.o  -o ../bin/server -rdynamic /_home/beunprepared/working/RPC/CppRemote/lib/libremote.a -Wl,-Bstatic -lboost_serialization -lboost_thread -lboost_system -lboost_chrono -Wl,-Bdynamic -pthread 
