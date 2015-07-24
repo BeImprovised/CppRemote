@@ -1,1 +1,0 @@
-/usr/bin/c++   -O3 -DNDEBUG     -s CMakeFiles/server.dir/src/rmt.cpp.o CMakeFiles/server.dir/src/remote_test.cpp.o CMakeFiles/server.dir/src/server.cpp.o  -o ../bin/server -rdynamic /_home/beunprepared/working/RPC/CppRemote/lib/libremote.a -Wl,-Bstatic -lboost_serialization -lboost_thread -lboost_system -lboost_chrono -Wl,-Bdynamic -pthread 
