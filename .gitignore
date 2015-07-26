@@ -18,5 +18,5 @@
 *.swp
 
 # Build directories
-/build
-/bin
+build/
+bin/
