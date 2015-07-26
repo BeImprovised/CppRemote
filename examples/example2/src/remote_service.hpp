@@ -2,6 +2,7 @@
 #define EXAMPLE_REMOTE_SERVICE_HPP
 
 #include "person.hpp"
+#include "serialize_pointer.hpp"
 
 #include <remote/idl.hpp>
 #include <boost/serialization/vector.hpp>
@@ -11,6 +12,7 @@
 #define REMOTE_CLASS													\
 REMOTE_CLASS_BEGIN(remote_service)										\
 	REMOTE_METHOD_M1(void, pass_person, person)							\
+	REMOTE_METHOD_M1(void, pass_foo, Foo&)								\
 	REMOTE_METHOD_M1(void, pass_people, std::vector<person>)			\
 	REMOTE_METHOD_M1(void, pass_reference, person&)						\
 	REMOTE_METHOD_M1(void, pass_pointer, person*)						\

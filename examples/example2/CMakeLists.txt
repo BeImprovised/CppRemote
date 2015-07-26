@@ -49,11 +49,17 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
 
 set(Example_SOURCE_FILES_client
+	${Example_SRC_DIR}/person.hpp
+	${Example_SRC_DIR}/serialize_pointer.hpp
+	${Example_SRC_DIR}/remote_service.hpp
 	${Example_SRC_DIR}/remote_service.cpp
 	${Example_SRC_DIR}/client.cpp
 )
 
 set(Example_SOURCE_FILES_server
+	${Example_SRC_DIR}/person.hpp
+	${Example_SRC_DIR}/serialize_pointer.hpp
+	${Example_SRC_DIR}/remote_service.hpp
 	${Example_SRC_DIR}/remote_service.cpp
 	${Example_SRC_DIR}/server.cpp
 )
@@ -91,7 +97,19 @@ if(WIN32)
 	target_link_libraries(client ws2_32 mswsock)
 	target_link_libraries(server ws2_32 mswsock)
 endif()
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
-target_link_libraries(client -pthread)
-target_link_libraries(server -pthread)
+
+if(MSVC) # MSVC compiler (Win32 only)
+    # Display more warnings
+    set(CMAKE_CXX_FLAGS "/W3")
+elseif(UNIX OR CMAKE_COMPILER_IS_GNUCXX) # Clang OR Gcc (Linux, Mac OS or Win32 with MingW)
+    # Enable C++11 and displays all warnings
+    set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
+    target_link_libraries(client -pthread)
+    target_link_libraries(server -pthread)
+    if(APPLE) # Clang / Mac OS only
+        # Required on OSX to compile c++11
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -mmacosx-version-min=10.7")
+    endif(APPLE)
+endif()
