@@ -17,3 +17,6 @@
 *.lock
 *.swp
 
+# Build directories
+/build
+/bin
