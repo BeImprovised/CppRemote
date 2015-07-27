@@ -38,7 +38,7 @@ int main()
 #endif
     std::cerr
     //std::cout
-            << foo.get_data()->size() << std::endl;
+            << "foo.get_data()->size() =\t" << foo.get_data()->size() << std::endl;
     //std::cerr
     //std::cout
     //<< foo.elements.size() << std::endl;
@@ -46,6 +46,8 @@ int main()
     //std::cerr
     //std::cout
     //<< (&foo.data) << std::endl;
+
+    std::cerr << "Foo foo data:" << std::endl;
 
     for (const auto& a : *foo.get_data())
         std::cerr
@@ -84,6 +86,7 @@ int main()
 
     // use the remote pointer
     service->pass_person(tom);
+    service->pass_person(ben);
     service->pass_people(girls);
 
     // pass by reference & pointer.
@@ -104,9 +107,10 @@ int main()
     assert(eddy->m_age == 31);
     assert(andy->m_age == 39);
 
-
-
-
+    std::cout << "tom.age() = \t" << tom.age() << std::endl;
+    std::cout << "ben.age() = \t" << ben.age() << std::endl;
+    std::cout << "eddy.age() = \t" << eddy->age() << std::endl;
+    std::cout << "andy.age() = \t" << andy->age() << std::endl;
 
     // release raw pointer
     session.release(service);

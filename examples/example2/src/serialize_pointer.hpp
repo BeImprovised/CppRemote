@@ -72,7 +72,7 @@ private:
 
     Foo() : data(new std::vector<int>())
     {
-        std::cerr << "Running default constructor" << std::endl;
+        std::cerr << "Running default constructor of Foo." << std::endl;
         data->push_back(1);
         data->push_back(2);
         data->push_back(3);
@@ -104,7 +104,7 @@ public:
         data(data_)
         //, elements(elements_)
     {
-        std::cout << "cheap construction" << std::endl;
+        std::cout << "Cheap construction of Foo" << std::endl;
     }
 
     //Foo(
@@ -128,7 +128,7 @@ public:
             for (auto & d :
                     *data	//*e.data
                 ) {
-                std::cout << "Bar data element " << i++ << " = (" << d << ")" << std::endl;
+                std::cout << "Foo data element " << i++ << " = (" << d << ")" << std::endl;
             }
         }
         //}

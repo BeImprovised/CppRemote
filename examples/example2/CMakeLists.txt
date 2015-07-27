@@ -61,6 +61,7 @@ set(Example_SOURCE_FILES_server
 	${Example_SRC_DIR}/serialize_pointer.hpp
 	${Example_SRC_DIR}/remote_service.hpp
 	${Example_SRC_DIR}/remote_service.cpp
+	${Example_SRC_DIR}/service.hpp
 	${Example_SRC_DIR}/server.cpp
 )
 

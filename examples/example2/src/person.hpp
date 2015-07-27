@@ -14,7 +14,9 @@ private:
 
     person()
         : m_age(0)
-    {}
+    {
+        std::cout << "Default constructor of person." << std::endl;
+    }
 
     template<typename Archive>
     void serialize(Archive& ar, unsigned int const)
@@ -31,13 +33,18 @@ public:
         m_age++;
     }
 
+    int age() const
+    {
+        return m_age;
+    }
+
     person(std::string name, int age)
         : m_name(name), m_age(age)
     {}
 
     void info() const
     {
-        std::cout << m_name << " (" << m_age << ")" << std::endl;
+        std::cout << m_name << " current age is : " << m_age << "."; // << std::endl;
     }
 
 
