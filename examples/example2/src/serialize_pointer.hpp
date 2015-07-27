@@ -45,6 +45,7 @@ private:
     )
     {
         //ar << foo->data;// << foo->elements;
+        std::cout << "save_construct_data" << std::endl;
         for (std::vector<int>::size_type i = 0; i < 10; i++) {
             ar << (*foo->data)[i];  // this don't break the private property / attribute of "data", but modify the class definition
         }
@@ -55,6 +56,7 @@ private:
         Archive & ar, Foo * foo, const unsigned int file_version
     )
     {
+        std::cout << "load_construct_data" << std::endl;
         std::shared_ptr < std::vector<int> >	//boost::shared_ptr< std::vector<int> >
         data = std::shared_ptr < std::vector<int> >(new  std::vector<int> ());
         //std::vector<Foo::Bar> elements;
