@@ -18,11 +18,11 @@ class future_error_category
 : public boost::system::error_category
 {
 public:
-	virtual char const* name() const;
+	virtual char const* name() const BOOST_SYSTEM_NOEXCEPT;
 	virtual std::string message(int ev) const;
 };
 
-char const* future_error_category::name() const
+char const* future_error_category::name() const BOOST_SYSTEM_NOEXCEPT
 {
 	return "future";
 }

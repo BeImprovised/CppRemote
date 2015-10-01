@@ -9,6 +9,7 @@
 #ifndef __REMOTE_DETAIL_SERIALIZE_PARAM_HPP__
 #define __REMOTE_DETAIL_SERIALIZE_PARAM_HPP__
 
+#include <memory>
 #include <remote/detail/param.hpp>
 
 #include <boost/version.hpp>
@@ -28,132 +29,161 @@
 #include <boost/type_traits/is_same.hpp>
 
 
-namespace boost
-{
-namespace serialization
-{
+namespace boost {
+    namespace serialization {
 
-template<typename Archive, typename T>
-void serialize(Archive& ar, remote::detail::param<T>& p, unsigned int const v)
-{
-	split_free(ar, p, v);
-}
+        template<typename Archive, typename T>
+        void serialize(Archive& ar, remote::detail::param<T>& p, unsigned int const v)
+        {
+            split_free(ar, p, v);
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<T> const& p, unsigned int const v)
-{
-	typedef typename is_same<typename implementation_level<T>::type,
-						mpl::int_<object_class_info> >::type has_info;
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<T> const& p, unsigned int const v)
+        {
+            typedef typename is_same<typename implementation_level<T>::type,
+                    mpl::int_<object_class_info> >::type has_info;
 
-	save(ar, p, v, has_info());
-}
+            save(ar, p, v, has_info());
+        }
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<T>& p, unsigned int const v)
-{
-	typedef typename is_same<typename implementation_level<T>::type,
-						mpl::int_<object_class_info> >::type has_info;
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<T>& p, unsigned int const v)
+        {
+            typedef typename is_same<typename implementation_level<T>::type,
+                    mpl::int_<object_class_info> >::type has_info;
 
-	load(ar, p, v, has_info());
-}
+            load(ar, p, v, has_info());
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<T> const& p, unsigned int const, mpl::true_)
-{
-	item_version_type const item_version(version<T>::value);
-	ar << make_nvp("item_version", item_version);
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<T> const& p, unsigned int const, mpl::true_)
+        {
+            item_version_type const item_version(version<T>::value);
+            ar << make_nvp("item_version", item_version);
 
-	save_construct_data_adl(ar, &p.get(), item_version);
-	ar << make_nvp("param", p.get());
-}
+            save_construct_data_adl(ar, &p.get(), item_version);
+            ar << make_nvp("param", p.get());
+        }
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<T>& p, unsigned int const, mpl::true_)
-{
-	item_version_type item_version(0);
-	ar >> make_nvp("item_version", item_version);
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<T>& p, unsigned int const, mpl::true_)
+        {
+            item_version_type item_version(0);
+            ar >> make_nvp("item_version", item_version);
 
-	typename remote::detail::param<T>::raw_type* ptr = p.allocate();
+            typename remote::detail::param<T>::raw_type* ptr = p.allocate();
 
-	load_construct_data_adl(ar, ptr, item_version);
-	ar >> make_nvp("param", *ptr);
-}
+            load_construct_data_adl(ar, ptr, item_version);
+            ar >> make_nvp("param", *ptr);
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<T> const& p, unsigned int const, mpl::false_)
-{
-	save_construct_data_adl(ar, &p.get(), item_version_type(version<T>::value));
-	ar << make_nvp("param", p.get());
-}
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<T> const& p, unsigned int const, mpl::false_)
+        {
+            save_construct_data_adl(ar, &p.get(), item_version_type(version<T>::value));
+            ar << make_nvp("param", p.get());
+        }
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<T>& p, unsigned int const, mpl::false_)
-{
-	typename remote::detail::param<T>::raw_type* ptr = p.allocate();
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<T>& p, unsigned int const, mpl::false_)
+        {
+            typename remote::detail::param<T>::raw_type* ptr = p.allocate();
 
-	load_construct_data_adl(ar, ptr, item_version_type(version<T>::value));
-	ar >> make_nvp("param", *ptr);
-}
+            load_construct_data_adl(ar, ptr, item_version_type(version<T>::value));
+            ar >> make_nvp("param", *ptr);
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<T&> const& p, unsigned int const)
-{
-	ar << make_nvp("param", p.m_ptr);
-}
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<T&> const& p, unsigned int const)
+        {
+            ar << make_nvp("param", p.m_ptr);
+        }
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<T&>& p, unsigned int const)
-{
-	typename boost::remove_const<T>::type* ptr;
-	ar >> make_nvp("param", ptr);
-	p.m_ptr = ptr;
-}
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<T&>& p, unsigned int const)
+        {
+            typename boost::remove_const<T>::type* ptr;
+            ar >> make_nvp("param", ptr);
+            p.m_ptr = ptr;
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<T*> const& p, unsigned int const)
-{
-	ar << make_nvp("param", p.m_ptr);
-}
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<T*> const& p, unsigned int const)
+        {
+            ar << make_nvp("param", p.m_ptr);
+        }
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<T*>& p, unsigned int const)
-{
-	typename boost::remove_const<T>::type* ptr;
-	ar >> make_nvp("param", ptr);
-	p.m_ptr = ptr;
-}
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<T*>& p, unsigned int const)
+        {
+            typename boost::remove_const<T>::type* ptr;
+            ar >> make_nvp("param", ptr);
+            p.m_ptr = ptr;
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<shared_ptr<T> > const& p, unsigned int const)
-{
-	ar << make_nvp("param", p.m_ptr);
-}
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<boost::shared_ptr<T> > const& p, unsigned int const)
+        {
+            ar << make_nvp("param", p.m_ptr);
+        }
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<shared_ptr<T> >& p, unsigned int const)
-{
-	typedef typename boost::remove_const<T>::type U;
-	shared_ptr<U> ptr;
-	ar >> make_nvp("param", ptr);
-	p.m_ptr = ptr;
-}
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<boost::shared_ptr<T> >& p, unsigned int const)
+        {
+            typedef typename boost::remove_const<T>::type U;
+            boost::shared_ptr<U> ptr;
+            ar >> make_nvp("param", ptr);
+            p.m_ptr = ptr;
+        }
 
-template<typename Archive, typename T>
-void save(Archive& ar, remote::detail::param<weak_ptr<T> > const& p, unsigned int const)
-{
-	boost::shared_ptr<T> sp = p.m_ptr.lock();
-	ar << make_nvp("param", sp);
-}
 
-template<typename Archive, typename T>
-void load(Archive& ar, remote::detail::param<weak_ptr<T> >& p, unsigned int const)
-{
-	boost::shared_ptr<T> sp;
-	ar >> make_nvp("param",sp);
-	p.m_ptr = sp;
-}
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<std::shared_ptr<T> > const& p, unsigned int const)
+        {
+            ar << make_nvp("param", p.m_ptr);
+        }
 
-}
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<std::shared_ptr<T> >& p, unsigned int const)
+        {
+            typedef typename std::remove_const<T>::type U;
+            std::shared_ptr<U> ptr;
+            ar >> make_nvp("param", ptr);
+            p.m_ptr = ptr;
+        }
+
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<boost::weak_ptr<T> > const& p, unsigned int const)
+        {
+            boost::shared_ptr<T> sp = p.m_ptr.lock();
+            ar << make_nvp("param", sp);
+        }
+
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<boost::weak_ptr<T> >& p, unsigned int const)
+        {
+            boost::shared_ptr<T> sp;
+            ar >> make_nvp("param", sp);
+            p.m_ptr = sp;
+        }
+
+        template<typename Archive, typename T>
+        void save(Archive& ar, remote::detail::param<std::weak_ptr<T> > const& p, unsigned int const)
+        {
+            std::shared_ptr<T> sp = p.m_ptr.lock();
+            ar << make_nvp("param", sp);
+        }
+
+        template<typename Archive, typename T>
+        void load(Archive& ar, remote::detail::param<std::weak_ptr<T> >& p, unsigned int const)
+        {
+            std::shared_ptr<T> sp;
+            ar >> make_nvp("param", sp);
+            p.m_ptr = sp;
+        }
+
+    }
 }
 
 #endif

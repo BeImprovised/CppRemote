@@ -8,7 +8,7 @@
 //-----------------------------------------------------------------------------
 #ifndef __REMOTE_DETAIL_STACK_ALLOCATE_HPP__
 #define __REMOTE_DETAIL_STACK_ALLOCATE_HPP__
-
+#include <memory>
 #include <boost/aligned_storage.hpp>
 
 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/remote/serialization/system/error_categories.hpp
+boost/system/error_code.hpp
+-
+set
+-
+
+/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/serialization/system/error_categories.cpp
+remote/serialization/system/error_categories.hpp
+-
+boost/bind/bind.hpp
+-
+boost/ref.hpp
+-
+algorithm
+-
+sstream
+-
+

@@ -99,3 +99,17 @@ include_directories(${Boost_INCLUDE_DIRS})
 include_directories(${CppRemote_INCLUDE_DIR})
 
 add_library(remote STATIC ${CppRemote_SOURCE_FILES})
+
+if(MSVC) # MSVC compiler (Win32 only)
+    # Display more warnings
+    set(CMAKE_CXX_FLAGS "/W3")
+elseif(UNIX OR CMAKE_COMPILER_IS_GNUCXX) # Clang OR Gcc (Linux, Mac OS or Win32 with MingW)
+    # Enable C++11 and displays all warnings
+    set(CMAKE_CXX_FLAGS "-Wall -std=c++11")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
+    if(APPLE) # Clang / Mac OS only
+        # Required on OSX to compile c++11
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -mmacosx-version-min=10.7")
+    endif(APPLE)
+endif()

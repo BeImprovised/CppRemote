@@ -73,8 +73,8 @@ int main()
     girls.push_back(person("jenny", 9));
     girls.push_back(person("amanda", 10));
 
-    boost::shared_ptr<person> eddy = boost::make_shared<person>("eddy", 30);
-    boost::shared_ptr<person> andy = boost::make_shared<person>("andy", 38);
+    std::shared_ptr<person> eddy = std::make_shared<person>("eddy", 30);
+    std::shared_ptr<person> andy = std::make_shared<person>("andy", 38);
 
     // create session and connect to server
     remote::session session;

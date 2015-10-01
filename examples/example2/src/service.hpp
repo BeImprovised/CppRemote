@@ -4,6 +4,7 @@
 #include "person.hpp"
 #include "serialize_pointer.hpp"
 
+#include <memory>
 #include <boost/shared_ptr.hpp>
 #include <boost/weak_ptr.hpp>
 #include <vector>
@@ -60,7 +61,7 @@ public:
         }
     }
 
-    void pass_shared_ptr(boost::shared_ptr<person> s)
+    void pass_shared_ptr(std::shared_ptr<person> s)
     {
         if(s) {
 
@@ -71,9 +72,9 @@ public:
         }
     }
 
-    void pass_weak_ptr(boost::weak_ptr<person> w)
+    void pass_weak_ptr(std::weak_ptr<person> w)
     {
-        boost::shared_ptr<person> s = w.lock();
+        std::shared_ptr<person> s = w.lock();
         if(s) {
 
             s->add_age();//s->m_age++;

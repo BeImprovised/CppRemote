@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="CppRemote" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/_home/beunprepared/working/RPC/test_std/CppRemote/build_std" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/_home/beunprepared/working/RPC/test_std/CppRemote/build_std" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/_home/beunprepared/working/RPC/test_std/CppRemote/build_std" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="remote">
+         <Option output="/_home/beunprepared/working/RPC/test_std/CppRemote/lib/libremote.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/_home/beunprepared/working/RPC/test_std/CppRemote/build_std" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/_home/beunprepared/working/RPC/test_std/CppRemote/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/../../../../include/c++/4.9.2" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/../../../../include/c++/4.9.2/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/../../../../include/c++/4.9.2/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 remote" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="remote/fast">
+         <Option output="/_home/beunprepared/working/RPC/test_std/CppRemote/lib/libremote.a" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/_home/beunprepared/working/RPC/test_std/CppRemote/build_std" />
+         <Option object_output="./" />
+         <Option type="2" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/_home/beunprepared/working/RPC/test_std/CppRemote/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/../../../../include/c++/4.9.2" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/../../../../include/c++/4.9.2/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/../../../../include/c++/4.9.2/x86_64-redhat-linux" />
+            <Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 remote/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/_home/beunprepared/working/RPC/test_std/CppRemote/build_std/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/archive/binary_iarchive.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/archive/text_iarchive.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/archive/xml_iarchive.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/buffer_pool.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/local_acceptor.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/local_transport.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/named_pipe_acceptor.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/named_pipe_transport.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/tcp_acceptor.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/tcp_endpoint.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/tcp_transport.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/udp_acceptor.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/udp_endpoint.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/bindings/udp_transport.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/call.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/comm_link.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/direct_link.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/pool_link.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/pool_node.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/proxy.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/proxy_pool.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/result.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/server.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/service_pool.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/detail/type_id.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/exception.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/future_error.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/global.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/io_runner.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/pool_node.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/register_archive.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/serialization/system/error_categories.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/server.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/src/remote/session.cpp">
+      </Unit>
+      <Unit filename="/_home/beunprepared/working/RPC/test_std/CppRemote/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,2 @@
+/_home/beunprepared/working/RPC/test_std/CppRemote/examples/example2/build_std/CMakeFiles/client.dir
+/_home/beunprepared/working/RPC/test_std/CppRemote/examples/example2/build_std/CMakeFiles/server.dir

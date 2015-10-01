@@ -7,7 +7,7 @@
 #include <remote/idl.hpp>
 #include <boost/serialization/vector.hpp>
 #include <boost/serialization/shared_ptr.hpp>
-
+#include <memory>
 
 #define REMOTE_CLASS													\
 REMOTE_CLASS_BEGIN(remote_service)										\
@@ -16,8 +16,8 @@ REMOTE_CLASS_BEGIN(remote_service)										\
 	REMOTE_METHOD_M1(void, pass_people, std::vector<person>)			\
 	REMOTE_METHOD_M1(void, pass_reference, person&)						\
 	REMOTE_METHOD_M1(void, pass_pointer, person*)						\
-	REMOTE_METHOD_M1(void, pass_shared_ptr, boost::shared_ptr<person>)	\
-	REMOTE_METHOD_M1(void, pass_weak_ptr, boost::weak_ptr<person>)		\
+	REMOTE_METHOD_M1(void, pass_shared_ptr, std::shared_ptr<person>)	\
+	REMOTE_METHOD_M1(void, pass_weak_ptr, std::weak_ptr<person>)		\
 REMOTE_CLASS_END
 #include <remote/idl/class.hpp>
 

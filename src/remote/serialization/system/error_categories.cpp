@@ -33,7 +33,7 @@ class unknown_error_category : public error_category
 public:
 	unknown_error_category(){}
 
-	char const* name() const { return "unknown"; }
+	char const* name() const BOOST_SYSTEM_NOEXCEPT{ return "unknown"; }
 
 	std::string message(int ev) const
 	{
